@@ -23,7 +23,7 @@ class Lexer:
             return self.source[self.currentPos + 1] # Returns the character after currentPos
 
     def abort(self, message):
-        print(f"Sintax Error: {message}")
+        print(f"Lexical Error: {message}")
 
     def skipComments(self):
         if self.currentChar == '#':
